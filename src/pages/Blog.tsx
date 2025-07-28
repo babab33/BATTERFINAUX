@@ -115,6 +115,7 @@ const Blog = () => {
                   <Link
                     to="/blog/spring-lawn-care-tips"
                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                   className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
                   >
                      Read More
                      <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
@@ -166,7 +167,6 @@ const Blog = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime}</span>
-                       }}
                     {post.id === 2 ? (
                       <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
                         Upcoming
@@ -187,6 +187,7 @@ const Blog = () => {
                         <ArrowRight className="ml-1 w-4 h-4 text-red-600 group-hover:translate-x-1 transition-transform duration-200" />
                       </Link>
                     )}
+                  </div>
                 </div>
               </article>
             ))}

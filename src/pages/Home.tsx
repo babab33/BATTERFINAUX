@@ -219,7 +219,6 @@ const Home = () => {
                     </Link>
                     <Link to="/services#lawn-care-services">
                     </Link>   
-                    </>
                   )}
                 </div>
               </div>

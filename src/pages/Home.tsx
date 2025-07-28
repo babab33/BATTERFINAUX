@@ -363,34 +363,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-              <div
-                key={index}
-                className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up w-full max-w-sm"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex text-yellow-400 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                  {testimonial.halfStar && (
-                    <div className="relative">
-                      <Star className="w-5 h-5 text-gray-300" />
-                      <div className="absolute inset-0 overflow-hidden w-1/2">
-                        <Star className="w-5 h-5 fill-current text-yellow-400" />
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <p className="text-gray-700 mb-6 leading-relaxed italic">
-                  "{testimonial.content}"
-                </p>
-                <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-gray-500">{testimonial.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
 
           {/* Google Reviews Footer */}
           <div className="text-center">

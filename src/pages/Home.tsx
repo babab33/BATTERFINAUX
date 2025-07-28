@@ -203,7 +203,7 @@ const Home = () => {
             </ul>
             {index === 0 ? (
               <Link
-                to="/services#services"
+                to="/services"
                 className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >
                 Learn More

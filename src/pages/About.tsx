@@ -44,6 +44,7 @@ const About = () => {
               </p>
               <Link
                 to="/contact"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center group"
               >
                 Start Your Journey
@@ -156,6 +157,7 @@ const About = () => {
           </p>
           <Link
             to="/contact"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 inline-flex items-center group"
           >
             Get Your Free Consultation

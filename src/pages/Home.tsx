@@ -296,8 +296,73 @@ const Home = () => {
           </div>
 
           {/* All Reviews Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 justify-items-center">
-            {testimonials.map((testimonial, index) => (
+          <div className="mb-16">
+            {/* First 9 reviews in 3x3 grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 justify-items-center">
+              {testimonials.slice(0, 9).map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up w-full max-w-sm"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex text-yellow-400 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-current" />
+                    ))}
+                    {testimonial.halfStar && (
+                      <div className="relative">
+                        <Star className="w-5 h-5 text-gray-300" />
+                        <div className="absolute inset-0 overflow-hidden w-1/2">
+                          <Star className="w-5 h-5 fill-current text-yellow-400" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-gray-700 mb-6 leading-relaxed italic">
+                    "{testimonial.content}"
+                  </p>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                    <p className="text-gray-500">{testimonial.date}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            {/* Bottom 2 reviews centered */}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
+                {testimonials.slice(9, 11).map((testimonial, index) => (
+                  <div
+                    key={index + 9}
+                    className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up w-full max-w-sm"
+                    style={{ animationDelay: `${(index + 9) * 0.1}s` }}
+                  >
+                    <div className="flex text-yellow-400 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-current" />
+                      ))}
+                      {testimonial.halfStar && (
+                        <div className="relative">
+                          <Star className="w-5 h-5 text-gray-300" />
+                          <div className="absolute inset-0 overflow-hidden w-1/2">
+                            <Star className="w-5 h-5 fill-current text-yellow-400" />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    <p className="text-gray-700 mb-6 leading-relaxed italic">
+                      "{testimonial.content}"
+                    </p>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                      <p className="text-gray-500">{testimonial.date}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
               <div
                 key={index}
                 className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up w-full max-w-sm"

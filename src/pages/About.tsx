@@ -128,11 +128,11 @@ const About = () => {
 
           <div className="flex justify-center">
             <div className="text-center group">
-              <div className="mb-6 overflow-hidden rounded-2xl">
+              <div className="mb-6 overflow-hidden rounded-2xl w-80 h-80 mx-auto">
                 <img
                   src="/john.png"
                   alt="John Batteiger"
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-300"
                   loading="eager"
                 />
               </div>

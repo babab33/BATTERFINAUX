@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Leaf, Snowflake, Truck, Clock, Users } from 'lucide-react';
 
 const Services = () => {
+  useEffect(() => {
+    // Check if there's a hash in the URL and scroll to it
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, []);
+
   const lawnServices = [
     {
       title: 'Seasonal Lawn Mowing',

@@ -203,7 +203,15 @@ const Home = () => {
             </ul>
             {index === 0 ? (
               <Link
-                to="/services#lawn-care-services"
+                to="/services"
+                onClick={() => {
+                  setTimeout(() => {
+                    const element = document.getElementById('lawn-care-services');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }, 100);
+                }}
                 className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >
                 Learn More
@@ -211,7 +219,15 @@ const Home = () => {
               </Link>
             ) : (
               <Link
-                to="/services#snow-removal-services"
+                to="/services"
+                onClick={() => {
+                  setTimeout(() => {
+                    const element = document.getElementById('snow-removal-services');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }, 100);
+                }}
                 className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >
                 Learn More

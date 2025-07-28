@@ -205,12 +205,8 @@ const Home = () => {
               <Link
                 to="/services"
                 onClick={() => {
-                  setTimeout(() => {
-                    const element = document.getElementById('lawn-care-services');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }, 100);
+                  // Navigate to services page first
+                  window.location.href = '/services#lawn-care-services';
                 }}
                 className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >
@@ -221,12 +217,8 @@ const Home = () => {
               <Link
                 to="/services"
                 onClick={() => {
-                  setTimeout(() => {
-                    const element = document.getElementById('snow-removal-services');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }, 100);
+                  // Navigate to services page first
+                  window.location.href = '/services#snow-removal-services';
                 }}
                 className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >

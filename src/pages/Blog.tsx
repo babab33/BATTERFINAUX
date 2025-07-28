@@ -116,8 +116,8 @@ const Blog = () => {
                     to="/blog/spring-lawn-care-tips"
                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
-                    Read More
-                    <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                     Read More
+                     <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                   </Link>
                 </div>
               </div>
@@ -168,7 +168,13 @@ const Blog = () => {
                     <span className="text-sm text-gray-500">{post.readTime}</span>
                    {post.id === 2 ? (
                      <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
-                       Upcoming
+                     onClick={() => {
+                       window.scrollTo({ top: 0, behavior: 'auto' });
+                       setTimeout(() => {
+                         window.scrollTo({ top: 100, behavior: 'smooth' });
+                       }, 100);
+                     }}
+                     className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
                        <Clock className="ml-1 w-4 h-4 group-hover:scale-110 transition-transform duration-200" />
                      </button>
                    ) : (

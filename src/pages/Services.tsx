@@ -87,6 +87,7 @@ const Services = () => {
           <Link
             to="/contact"
             className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center group"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             Get Custom Quote
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -148,6 +149,7 @@ const Services = () => {
                   <Link
                     to="/contact"
                     className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group whitespace-nowrap text-base lg:text-lg self-end ml-4"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     Get Quote
                     <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
@@ -212,6 +214,7 @@ const Services = () => {
                   <Link
                     to="/contact"
                     className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group whitespace-nowrap text-base lg:text-lg self-end ml-4"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     Get Quote
                     <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
@@ -293,6 +296,7 @@ const Services = () => {
             <Link
               to="/contact"
               className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 inline-flex items-center justify-center group"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Get Custom Quote
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />

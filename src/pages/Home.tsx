@@ -379,6 +379,7 @@ const Home = () => {
           <p className="text-xl text-red-100 mb-8 leading-relaxed">
             Join thousands of satisfied customers and experience the Batteiger difference. 
           </p>
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"

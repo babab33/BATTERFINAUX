@@ -27,6 +27,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -35,6 +36,7 @@ const Header = () => {
             </Link>
             <Link
               to="/about"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/about') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -43,6 +45,7 @@ const Header = () => {
             </Link>
             <Link
               to="/services"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/services') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -51,6 +54,7 @@ const Header = () => {
             </Link>
             <Link
               to="/blog"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/blog') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -59,6 +63,7 @@ const Header = () => {
             </Link>
             <Link
               to="/contact"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/contact') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -99,46 +104,61 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <Link
                 to="/"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/about') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link
                 to="/services"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/services') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 to="/blog"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/blog') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 to="/contact"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/contact') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
@@ -152,8 +172,11 @@ const Header = () => {
                 </a>
                 <Link
                   to="/contact"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                   className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 inline-block"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   Get Quote
                 </Link>

@@ -35,27 +35,6 @@ const Blog = () => {
     ? blogPosts 
     : blogPosts.filter(post => post.category === selectedCategory);
 
-  // Smooth scroll to top function with cross-browser compatibility
-  const scrollToTop = () => {
-    // Modern browsers with smooth scrolling support
-    if ('scrollBehavior' in document.documentElement.style) {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    } else {
-      // Fallback for older browsers with JavaScript animation
-      const scrollAnimation = () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll > 0) {
-          window.requestAnimationFrame(scrollAnimation);
-          window.scrollTo(0, currentScroll - (currentScroll / 8));
-        }
-      };
-      scrollAnimation();
-    }
-  };
-
   return (
     <>
       {/* Hero Section */}
@@ -135,8 +114,8 @@ const Blog = () => {
                   <span className="text-sm text-gray-500">{blogPosts[0].readTime}</span>
                   <Link
                     to="/blog/spring-lawn-care-tips"
-                    onClick={scrollToTop}
-                    className="inline-flex items-center text-red-600 hover:text-red-700 font-medium group"
+                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="text-red-600 hover:text-red-700 font-semibold inline-flex items-center group"
                   >
                      Read More
                      <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
@@ -208,7 +187,7 @@ const Blog = () => {
           </p>
           <Link
             to="/contact"
-            onClick={scrollToTop}
+           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center group"
           >
             Get Your Custom Plan

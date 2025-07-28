@@ -173,10 +173,14 @@ const Blog = () => {
                        <Clock className="ml-1 w-4 h-4 group-hover:scale-110 transition-transform duration-200" />
                      </button>
                    ) : (
-                     <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
+                     <Link
+                       to="/blog/spring-lawn-care-tips"
+                       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                       className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
+                     >
                        Read More
                        <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                     </button>
+                     </Link>
                    )}
                   </div>
                 </div>

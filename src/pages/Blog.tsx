@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
+import { ArrowRight, Calendar, User, Tag, Clock } from 'lucide-react';
 
 const Blog = () => {
   const blogPosts = [
@@ -115,6 +115,7 @@ const Blog = () => {
                   <Link
                     to="/blog/spring-lawn-care-tips"
                     className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
+                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     Read More
                     <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
@@ -166,10 +167,17 @@ const Blog = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime}</span>
-                    <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
-                      Read More
-                      <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                    </button>
+                   {post.id === 2 ? (
+                     <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
+                       Upcoming
+                       <Clock className="ml-1 w-4 h-4 group-hover:scale-110 transition-transform duration-200" />
+                     </button>
+                   ) : (
+                     <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
+                       Read More
+                       <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                     </button>
+                   )}
                   </div>
                 </div>
               </article>

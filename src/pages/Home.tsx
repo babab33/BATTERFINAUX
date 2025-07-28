@@ -203,7 +203,7 @@ const Home = () => {
             </ul>
             {index === 0 ? (
               <Link
-                to="/services#top"
+                to="/services#lawn-care-services"
                 className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >
                 Learn More
@@ -224,6 +224,15 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+{/* Invisible anchor points for navigation */}
+
+{/* Invisible anchor point for Lawn Care Services positioned higher */}
+<div id="lawn-care-services" style={{ position: 'absolute', top: '-200px' }}></div>
+
+{/* Invisible anchor point for Snow Removal Services positioned below */}
+<div id="snow-removal-services" style={{ position: 'absolute', top: '-100px' }}></div>
+
 
 
 

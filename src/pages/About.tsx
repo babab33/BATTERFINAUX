@@ -130,9 +130,10 @@ const About = () => {
             <div className="text-center group">
               <div className="mb-6 overflow-hidden rounded-2xl">
                 <img
-                  src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg"
+                  src="/john.png"
                   alt="John Batteiger"
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="eager"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">John Batteiger</h3>

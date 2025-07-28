@@ -62,13 +62,6 @@ const Home = () => {
       halfStar: false
     },
     {
-      name: 'Kylee DeBock',
-      date: 'Feb 04, 2025',
-      content: 'We no longer live in Oklahoma. Please take us off your list.',
-      rating: 4,
-      halfStar: false
-    },
-    {
       name: 'Damon Williams',
       date: 'Dec 21, 2024',
       content: 'Awesome work',
@@ -303,11 +296,11 @@ const Home = () => {
           </div>
 
           {/* All Reviews Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 justify-items-center">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up"
+                className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-up w-full max-w-sm"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex text-yellow-400 mb-4">

@@ -14,7 +14,7 @@ const Services = () => {
       title: 'Fertilization Program',
       description: 'Comprehensive lawn nutrition program to keep your grass thick, green, and healthy.',
       features: ['4 applications/year', 'Weed control and fertilization, including pre-emergent', 'Ground sterilizer and roundup application options available', 'Mosquito and bug control options available'],
-      price: 'Starting at $95/application'
+      price: 'Starting at $95/visit'
     },
     {
       title: 'Seasonal Services',

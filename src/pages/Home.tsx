@@ -228,7 +228,7 @@ const Home = () => {
 {/* Invisible anchor points for navigation */}
 
 {/* Invisible anchor point for Lawn Care Services positioned higher */}
-<div id="lawn-care-services" style={{ position: 'absolute', top: '-200px' }}></div>
+<div id="lawn-care-services" style={{ position: 'absolute', top: '-800px' }}></div>
 
 {/* Invisible anchor point for Snow Removal Services positioned below */}
 <div id="snow-removal-services" style={{ position: 'absolute', top: '-100px' }}></div>

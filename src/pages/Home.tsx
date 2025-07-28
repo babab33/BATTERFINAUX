@@ -216,9 +216,10 @@ const Home = () => {
                     >
                       Learn More
                       <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                    <Link
-                      to="/services#lawn-care-services"
-                    >
+                    </Link>
+                    <Link to="/services#lawn-care-services">
+                    </Link>   
+                    </>
                   )}
                 </div>
               </div>

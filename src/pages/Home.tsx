@@ -266,7 +266,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">5+ Years Experience</h3>
               <p className="text-gray-600 leading-relaxed">
-                Decades of experience caring for properties just like yours. We know what works.
+                Years of experience caring for properties just like yours. We know what works.
               </p>
             </div>
 

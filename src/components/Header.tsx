@@ -27,7 +27,11 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -36,7 +40,11 @@ const Header = () => {
             </Link>
             <Link
               to="/about"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/about') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -45,7 +53,11 @@ const Header = () => {
             </Link>
             <Link
               to="/services"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/services') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -54,7 +66,11 @@ const Header = () => {
             </Link>
             <Link
               to="/blog"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/blog') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -63,7 +79,11 @@ const Header = () => {
             </Link>
             <Link
               to="/contact"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className={`font-medium transition-colors duration-200 ${
                 isActive('/contact') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
               }`}
@@ -83,7 +103,11 @@ const Header = () => {
             </a>
             <Link
               to="/contact"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
             >
               Get Quote
@@ -107,7 +131,9 @@ const Header = () => {
                 to="/"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
                 }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
@@ -119,7 +145,9 @@ const Header = () => {
                 to="/about"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
                 }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/about') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
@@ -131,7 +159,9 @@ const Header = () => {
                 to="/services"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
                 }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/services') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
@@ -143,7 +173,9 @@ const Header = () => {
                 to="/blog"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
                 }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/blog') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
@@ -155,7 +187,9 @@ const Header = () => {
                 to="/contact"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
                 }}
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/contact') ? 'text-red-600' : 'text-gray-700 hover:text-red-600'
@@ -175,7 +209,9 @@ const Header = () => {
                   to="/contact"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 100);
                   }}
                   className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 inline-block"
                 >

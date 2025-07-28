@@ -51,8 +51,71 @@ const BlogPost1 = () => {
 
       {/* Article Content */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="prose prose-lg max-w-none text-center">
+            <style jsx>{`
+              .prose h2,
+              .prose h3 {
+                text-align: center;
+                margin-top: 2.5rem;
+                margin-bottom: 1.5rem;
+              }
+              
+              .prose p {
+                text-align: center;
+                margin-bottom: 1.5rem;
+                line-height: 1.8;
+              }
+              
+              .prose ul,
+              .prose ol {
+                text-align: left;
+                max-width: 600px;
+                margin: 1.5rem auto;
+                padding-left: 1.5rem;
+              }
+              
+              .prose li {
+                margin-bottom: 0.75rem;
+                line-height: 1.7;
+              }
+              
+              .prose .bg-green-50,
+              .prose .bg-blue-50,
+              .prose .bg-yellow-50,
+              .prose .bg-red-50,
+              .prose .bg-gray-50 {
+                margin: 2rem auto;
+                max-width: 700px;
+                border-radius: 0.5rem;
+                padding: 1.5rem;
+              }
+              
+              .prose .bg-green-50 p,
+              .prose .bg-blue-50 p,
+              .prose .bg-yellow-50 p,
+              .prose .bg-red-50 p,
+              .prose .bg-gray-50 p {
+                text-align: left;
+                margin-bottom: 0;
+              }
+              
+              @media (max-width: 768px) {
+                .prose {
+                  padding: 0 1rem;
+                }
+                
+                .prose .bg-green-50,
+                .prose .bg-blue-50,
+                .prose .bg-yellow-50,
+                .prose .bg-red-50,
+                .prose .bg-gray-50 {
+                  margin: 1.5rem auto;
+                  padding: 1rem;
+                }
+              }
+            `}</style>
+            
             <p>
               Spring is the perfect time to set your lawn up for success throughout the growing season. After months of winter dormancy, your grass is ready to wake up and thrive with the right care and attention. 
             </p>

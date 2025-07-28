@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Leaf, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
 
+// Smooth scroll to top function
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
@@ -36,27 +44,47 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/#top" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <Link 
+                  to="/" 
+                  onClick={scrollToTop}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about#top" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <Link 
+                  to="/about" 
+                  onClick={scrollToTop}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services#top" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <Link 
+                  to="/services" 
+                  onClick={scrollToTop}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/blog#top" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <Link 
+                  to="/blog" 
+                  onClick={scrollToTop}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/contact#top" className="text-gray-400 hover:text-white transition-colors duration-200">
+                <Link 
+                  to="/contact" 
+                  onClick={scrollToTop}
+                  className="text-gray-400 hover:text-white transition-colors duration-200"
+                >
                   Contact
                 </Link>
               </li>

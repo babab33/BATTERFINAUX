@@ -166,66 +166,65 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Complete Property Care Solutions
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From pristine lawns in summer to clear driveways in winter, we've got your property covered year-round.
-            </p>
-          </div>
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Complete Property Care Solutions
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        From pristine lawns in summer to clear driveways in winter, we've got your property covered year-round.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+        >
+          <div className="h-64 overflow-hidden">
+            <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div className="p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
+            <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+            <ul className="space-y-2 mb-6">
+              {service.features.map((feature, idx) => (
+                <li key={idx} className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-red-600" />
+                  <span className="text-gray-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+            {index === 0 ? (
+              <Link
+                to="/services#lawn-care-services"
+                className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
               >
-                <div className="h-64 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-red-600" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {index === 0 ? (
-                    <a
-                      href="/services#lawn-care-services"
-                      className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
-                    >
-                      Learn More
-                      <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                    </a>
-                  ) : (
-                    <Link
-                      to="/services#snow-removal-services"
-                      className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
-                    >
-                      Learn More
-                      <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                    </Link>
-                    <Link to="/services#lawn-care-services">
-                    </Link>   
-                  )}
-                </div>
-              </div>
-            ))}
+                Learn More
+                <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+              </Link>
+            ) : (
+              <Link
+                to="/services#snow-removal-services"
+                className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
+              >
+                Learn More
+                <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+              </Link>
+            )}
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-br from-red-50 to-white">

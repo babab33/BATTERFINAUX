@@ -6,7 +6,7 @@ const BlogPost1 = () => {
   return (
     <>
       {/* Hero Section */}
-      <section id="blog-hero" className="relative py-20 bg-gradient-to-br from-green-50 to-white">
+      <section className="relative py-20 bg-gradient-to-br from-green-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/blog"
@@ -50,7 +50,7 @@ const BlogPost1 = () => {
       </section>
 
       {/* Article Content */}
-      <section id="blog-content" className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-16">
           <div className="prose prose-xl max-w-none">
             

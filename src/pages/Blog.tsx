@@ -114,6 +114,7 @@ const Blog = () => {
                   <span className="text-sm text-gray-500">{blogPosts[0].readTime}</span>
                   <Link
                     to="/blog/spring-lawn-care-tips"
+                    className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     Read More
@@ -174,6 +175,7 @@ const Blog = () => {
                    ) : (
                      <Link
                        to="/blog/spring-lawn-care-tips"
+                       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                        className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
                      >
                        Read More

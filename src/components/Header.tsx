@@ -13,7 +13,15 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-2 group"
+            onClick={() => {
+              setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }, 100);
+            }}
+          >
             <div className="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
               <img src="/logo" alt="Batteiger Logo" className="w-10 h-10 rounded-lg object-cover" />
             </div>

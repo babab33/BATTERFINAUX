@@ -225,6 +225,22 @@ const Home = () => {
   </div>
 </section>
 
+{/* Lawn Care Services Section (make sure this has the corresponding ID) */}
+<section id="lawn-care-services" className="py-20 bg-gray-100">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Lawn Care Services
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Our expert lawn care services will keep your lawn looking lush and green all year round.
+      </p>
+    </div>
+    {/* Content for Lawn Care Services goes here */}
+  </div>
+</section>
+
+
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-br from-red-50 to-white">

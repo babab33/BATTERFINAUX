@@ -378,7 +378,7 @@ const Home = () => {
           </h2>
           <p className="text-xl text-red-100 mb-8 leading-relaxed">
             Join thousands of satisfied customers and experience the Batteiger difference. 
-                    });
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
@@ -397,5 +397,6 @@ const Home = () => {
       </section>
     </>
   );
+};
 
 export default Home;

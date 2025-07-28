@@ -166,24 +166,22 @@ const Blog = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime}</span>
-                   {post.id === 2 ? (
-                     <button className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group">
-                     onClick={() => {
-                       window.scrollTo({ top: 0, behavior: 'auto' });
-                       setTimeout(() => {
-                         window.scrollTo({ top: 100, behavior: 'smooth' });
-                       }, 100);
-                     }}
-                     className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
+                       Upcoming
                        <Clock className="ml-1 w-4 h-4 group-hover:scale-110 transition-transform duration-200" />
                      </button>
                    ) : (
                      <Link
-                       to="/blog/spring-lawn-care-tips"
+                       to="/blog/spring-lawn-care-tips" 
+                       onClick={() => {
+                         window.scrollTo({ top: 0, behavior: 'auto' });
+                         setTimeout(() => {
+                           window.scrollTo({ top: 100, behavior: 'smooth' });
+                         }, 100);
+                       }}
                        className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
                      >
                        Read More
-                       <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                       <ArrowRight className="ml-1 w-4 h-4 text-red-600 group-hover:translate-x-1 transition-transform duration-200" />
                      </Link>
                    )}
                   </div>

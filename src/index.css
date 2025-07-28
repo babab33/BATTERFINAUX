@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scrolling for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

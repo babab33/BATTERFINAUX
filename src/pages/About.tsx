@@ -138,7 +138,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">John Batteiger</h3>
               <p className="text-red-600 font-medium mb-4">Owner/Operator</p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed max-w-xs sm:max-w-none mx-auto">
                 John leads every job with integrity and care, making sure every customer feels valued and well taken care of.
               </p>
             </div>

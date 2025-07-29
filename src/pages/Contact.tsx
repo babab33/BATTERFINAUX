@@ -7,6 +7,7 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
+    address: '',
     propertyType: '',
     serviceType: '',
     propertySize: '',
@@ -36,6 +37,7 @@ const Contact = () => {
           full_name: formData.name,
           email: formData.email,
           phone: formData.phone,
+          address: formData.address,
           property_type: formData.propertyType,
           service_needed: formData.serviceType,
           property_size: formData.propertySize,
@@ -165,6 +167,22 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all duration-200"
                       placeholder="(555) 123-4567"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
+                      Property Address *
+                    </label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      required
+                      value={formData.address}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all duration-200"
+                      placeholder="123 Main Street, City, State ZIP"
                     />
                   </div>
 

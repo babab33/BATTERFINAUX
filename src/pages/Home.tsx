@@ -388,7 +388,7 @@ const Home = () => {
                 href="https://www.google.com/search?sca_esv=e6a856e083a4051b&rlz=1C5CHFA_enCA1165CA1167&sxsrf=AE3TifP1CznZIaK2U9YtKbqEmVEZ6V4fzQ:1753633128793&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0dX6aSKVVGe1vAssDtCht5Ax0zPBlsk_qt9Cemz0GBd6c9tuIdwpF4kpo0GRWnPG0yfrj0wn3VdZZKFuBW-hkIOp9ek87JWbMHfVNNCeg22DmLEr3ruLtu7XXRzShqZg5cifpCzx5k8vXeyl0aHXML3LQAM&q=Batteiger+Lawn+Service.+Snow+Removal+%26+Weed+Control+Avis&sa=X&ved=2ahUKEwiq7tS9uN2OAxXqv4kEHQXnIFEQ0bkNegQIHxAE&biw=1470&bih=831&dpr=2#lrd=0x5320a3a83ec6660d:0xa31a8a7e77811f54,3,,,,"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200"
+                className="bg-red-600 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200 text-sm md:text-base min-h-[44px] flex items-center justify-center"
               >
                 Write a review
               </a>

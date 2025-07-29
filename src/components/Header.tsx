@@ -22,8 +22,8 @@ const Header = () => {
               }, 100);
             }}
           >
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
-              <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-10 h-10 rounded-lg object-cover" />
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+              <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-12 h-12 rounded-lg object-cover" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">Batteiger</h1>

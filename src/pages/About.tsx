@@ -128,7 +128,7 @@ const About = () => {
 
           <div className="flex justify-center">
             <div className="text-center group">
-              <div className="mb-6 overflow-hidden rounded-2xl w-96 h-80 mx-auto">
+              <div className="mb-6 overflow-hidden rounded-2xl w-64 h-52 sm:w-96 sm:h-80 mx-auto">
                 <img
                   src="/john.png"
                   alt="John Batteiger"

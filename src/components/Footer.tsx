@@ -18,8 +18,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-                <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-10 h-10 rounded-lg object-cover" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-12 h-12 rounded-lg object-cover" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Batteiger</h3>

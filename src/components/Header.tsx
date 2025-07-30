@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Leaf, Phone } from 'lucide-react';
+import ImageOptimized from './ImageOptimized';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,13 @@ const Header = () => {
             }}
           >
             <div className="w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
-              <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-12 h-12 rounded-lg object-cover" />
+              <ImageOptimized 
+                src="/logofinnn.jpg" 
+                alt="Batteiger Logo" 
+                className="w-12 h-12 rounded-lg object-cover"
+                priority={true}
+                loading="eager"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">Batteiger</h1>

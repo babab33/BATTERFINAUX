@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
+import LazyImage from '../components/LazyImage';
 
 const BlogPost1 = () => {
   return (
@@ -17,10 +18,11 @@ const BlogPost1 = () => {
           </Link>
           
           <div className="mb-8">
-            <img
+            <LazyImage
               src="https://images.pexels.com/photos/1453499/pexels-photo-1453499.jpeg"
               alt="Spring lawn care"
-              className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg"
+              className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg gpu-accelerated"
+              loading="eager"
             />
           </div>
 

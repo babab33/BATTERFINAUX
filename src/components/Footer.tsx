@@ -19,7 +19,13 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center">
-                <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-12 h-12 rounded-lg object-cover" />
+                <img 
+                  src="/logofinnn.jpg" 
+                  alt="Batteiger Logo" 
+                  className="w-12 h-12 rounded-lg object-cover gpu-accelerated" 
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Batteiger</h3>

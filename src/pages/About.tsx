@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Award, Heart, Shield } from 'lucide-react';
+import LazyImage from '../components/LazyImage';
 
 const About = () => {
   const values = [
@@ -52,10 +53,11 @@ const About = () => {
               </Link>
             </div>
             <div>
-              <img
+              <LazyImage
                 src="/batteigerfam.png"
                 alt="Batteiger family team"
-                className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300"
+                className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300 gpu-accelerated"
+                loading="lazy"
               />
             </div>
           </div>
@@ -129,11 +131,11 @@ const About = () => {
           <div className="flex justify-center">
             <div className="text-center group">
               <div className="mb-6 overflow-hidden rounded-2xl w-64 h-52 sm:w-96 sm:h-80 mx-auto">
-                <img
+                <LazyImage
                   src="/john.png"
                   alt="John Batteiger"
-                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-300"
-                  loading="eager"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-300 gpu-accelerated"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">John Batteiger</h3>

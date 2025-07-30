@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Star, Users, Clock, Award } from 'lucide-react';
+import LazyImage from '../components/LazyImage';
 
 const Home = () => {
   const services = [
@@ -182,10 +183,11 @@ const Home = () => {
           className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
         >
           <div className="h-64 overflow-hidden">
-            <img
+            <LazyImage
               src={service.image}
               alt={service.title}
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300 gpu-accelerated"
+              loading="lazy"
             />
           </div>
           <div className="p-8">

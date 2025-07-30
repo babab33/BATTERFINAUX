@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
-import ImageOptimized from '../components/ImageOptimized';
 
 const BlogPost2 = () => {
   return (
@@ -18,12 +17,10 @@ const BlogPost2 = () => {
           </Link>
           
           <div className="mb-8">
-            <ImageOptimized
+            <img
               src="https://images.pexels.com/photos/1128797/pexels-photo-1128797.jpeg"
               alt="Winter snow removal"
               className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg"
-              priority={true}
-              loading="eager"
             />
           </div>
 

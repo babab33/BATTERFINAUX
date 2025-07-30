@@ -2,31 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Performance optimizations */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Optimize font loading */
-body {
-  font-display: swap;
-}
-
-/* Optimize image loading */
-img {
-  content-visibility: auto;
-  contain-intrinsic-size: 300px 200px;
-}
-
-/* Reduce layout shifts */
-.animate-fade-in-up {
-  will-change: transform, opacity;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -40,3 +15,4 @@ img {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
+}

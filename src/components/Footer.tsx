@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Leaf, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
-import ImageOptimized from './ImageOptimized';
 
 // Smooth scroll to top function
 const scrollToTop = () => {
@@ -20,12 +19,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center">
-                <ImageOptimized 
-                  src="/logofinnn.jpg" 
-                  alt="Batteiger Logo" 
-                  className="w-12 h-12 rounded-lg object-cover"
-                  loading="lazy"
-                />
+                <img src="/logofinnn.jpg" alt="Batteiger Logo" className="w-12 h-12 rounded-lg object-cover" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Batteiger</h3>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, User, Tag, Clock } from 'lucide-react';
-import ImageOptimized from '../components/ImageOptimized';
 
 const Blog = () => {
   const blogPosts = [
@@ -79,12 +78,10 @@ const Blog = () => {
           <div className="bg-gradient-to-br from-red-50 to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <div className="relative h-64 lg:h-auto">
-                <ImageOptimized
+                <img
                   src={blogPosts[0].image}
                   alt={blogPosts[0].title}
                   className="w-full h-full object-cover"
-                  priority={true}
-                  loading="eager"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-gradient-to-r from-red-600 to-red-700 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -140,11 +137,10 @@ const Blog = () => {
                 className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <ImageOptimized
+                  <img
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                    loading="lazy"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/90 backdrop-blur-sm text-gray-700 px-3 py-1 rounded-full text-sm font-medium">

@@ -266,7 +266,7 @@ const Contact = () => {
                         <option value="one-car">One-Car Driveway</option>
                         <option value="two-car">Two-Car Driveway</option>
                         <option value="three-car">Three-Car Driveway</option>
-                        <option value="parking-space">Parking Space</option>
+                        <option value="parking">Parking</option>
                       </select>
                     </div>
                   )}

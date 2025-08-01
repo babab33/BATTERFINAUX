@@ -12,7 +12,8 @@ const Contact = () => {
     serviceType: '',
     propertySize: '',
     message: '',
-    preferredContact: 'email'
+    preferredContact: 'email',
+    drivewaySize: ''
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -42,7 +43,8 @@ const Contact = () => {
           service_needed: formData.serviceType,
           property_size: formData.propertySize,
           preferred_contact_method: formData.preferredContact,
-          additional_details: formData.message
+          additional_details: formData.message,
+          driveway_size: formData.drivewaySize
         }]);
 
       if (error) {
@@ -245,6 +247,28 @@ const Contact = () => {
                       <option value="extra-large">X Large (10,000 sq ft +)</option>
                     </select>
                   </div>
+
+                  {/* Conditional Driveway Size Field */}
+                  {(formData.serviceType === 'snow-removal' || formData.serviceType === 'both') && (
+                    <div>
+                      <label htmlFor="drivewaySize" className="block text-sm font-medium text-gray-700 mb-2">
+                        Driveway Size *
+                      </label>
+                      <select
+                        id="drivewaySize"
+                        name="drivewaySize"
+                        required
+                        value={formData.drivewaySize}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all duration-200"
+                      >
+                        <option value="">Select Driveway Size</option>
+                        <option value="one-car">One-Car Driveway</option>
+                        <option value="two-car">Two-Car Driveway</option>
+                        <option value="three-car">Three-Car Driveway</option>
+                      </select>
+                    </div>
+                  )}
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">

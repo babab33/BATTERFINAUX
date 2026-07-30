@@ -302,10 +302,10 @@ const Services = () => {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             <a
-              href="tel:+14062089025"
+              href="tel:+17018189370"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-red-600 transition-all duration-300 inline-flex items-center justify-center"
             >
-              Call (406) 208-9025
+              Call (701) 818-9370
             </a>
           </div>
         </div>

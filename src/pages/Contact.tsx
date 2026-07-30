@@ -62,8 +62,8 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      details: ['(406) 208-9025', 'Available 24/7 for emergencies'],
-      action: 'tel:+14062089025'
+      details: ['(701) 818-9370', 'Available 24/7 for emergencies'],
+      action: 'tel:+17018189370'
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -368,7 +368,7 @@ const Contact = () => {
                   for emergency situations.
                 </p>
                 <a
-                  href="tel:+14062089025"
+                  href="tel:+17018189370"
                   className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center group"
                 >
                   Call Emergency Line

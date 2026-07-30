@@ -128,7 +128,7 @@ const Home = () => {
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 <a
-                  href="tel:+14062089025"
+                  href="tel:+17018189370"
                   className="border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-all duration-300 inline-flex items-center justify-center"
                 >
                   Call Now
@@ -399,6 +399,15 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Service Summary */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Batteiger Lawn Service provides reliable, professional lawn care and snow removal to homeowners and businesses in and around Stanley, ND. We offer weekly and bi-weekly lawn maintenance, aeration, dethatching, and overgrown yard cleanup, along with dependable snow removal through the winter months. Known for showing up when we say we will and following through on our word, Batteiger Lawn Service has built a reputation for quality work and honest customer service — backed by a 5-star rating and 19+ reviews from local customers. Whether you need routine mowing or a one-time yard overhaul, we're here to help you carry the burden of yard maintenance.
+          </p>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-red-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -424,7 +433,7 @@ const Home = () => {
               href="https://www.google.com/search?sca_esv=e6a856e083a4051b&rlz=1C5CHFA_enCA1165CA1167&sxsrf=AE3TifP1CznZIaK2U9YtKbqEmVEZ6V4fzQ:1753633128793&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0dX6aSKVVGe1vAssDtCht5Ax0zPBlsk_qt9Cemz0GBd6c9tuIdwpF4kpo0GRWnPG0yfrj0wn3VdZZKFuBW-hkIOp9ek87JWbMHfVNNCeg22DmLEr3ruLtu7XXRzShqZg5cifpCzx5k8vXeyl0aHXML3LQAM&q=Batteiger+Lawn+Service.+Snow+Removal+%26+Weed+Control+Avis&sa=X&ved=2ahUKEwiq7tS9uN2OAxXqv4kEHQXnIFEQ0bkNegQIHxAE&biw=1470&bih=831&dpr=2#lrd=0x5320a3a83ec6660d:0xa31a8a7e77811f54,3,,,,"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-red-600 transition-all duration-300 inline-flex items-center justify-center"
             >
-              Call (406) 208-9025
+              Call (701) 818-9370
             </a>
           </div>
         </div>

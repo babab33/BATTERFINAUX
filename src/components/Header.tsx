@@ -109,11 +109,11 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+14062089025"
+              href="tel:+17018189370"
               className="flex items-center space-x-2 text-gray-700 hover:text-red-600 transition-colors duration-200"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">(406) 208-9025</span>
+              <span className="font-medium">(701) 818-9370</span>
             </a>
             <Link
               to="/contact"
@@ -213,11 +213,11 @@ const Header = () => {
               </Link>
               <div className="pt-4 border-t border-gray-100">
                 <a
-                  href="tel:+14062089025"
+                  href="tel:+17018189370"
                   className="flex items-center space-x-2 text-gray-700 hover:text-red-600 transition-colors duration-200 mb-4"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-medium">(406) 208-9025</span>
+                  <span className="font-medium">(701) 818-9370</span>
                 </a>
                 <Link
                   to="/contact"

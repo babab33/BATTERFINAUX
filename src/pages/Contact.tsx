@@ -31,6 +31,10 @@ const Contact = () => {
   };
 
   const handleFormSubmit = async () => {
+    if (!supabase) {
+      console.error('Supabase client not available');
+      return;
+    }
     try {
       const { error } = await supabase
         .from('website_quote_form_responses')

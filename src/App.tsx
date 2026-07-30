@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ErrorBoundary from './components/ErrorBoundary';
 import Home from './pages/Home';
 
 // Lazy load non-critical pages
@@ -24,19 +25,21 @@ function App() {
     <Router>
       <div className="min-h-screen bg-white">
         <Header />
-        <Suspense fallback={<PageLoader />}>
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/spring-lawn-care-tips" element={<BlogPost1 />} />
-              <Route path="/blog/winter-snow-removal-guide" element={<BlogPost2 />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </main>
-        </Suspense>
+        <main>
+          <ErrorBoundary>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/spring-lawn-care-tips" element={<BlogPost1 />} />
+                <Route path="/blog/winter-snow-removal-guide" element={<BlogPost2 />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </Suspense>
+          </ErrorBoundary>
+        </main>
         <Footer />
       </div>
     </Router>
